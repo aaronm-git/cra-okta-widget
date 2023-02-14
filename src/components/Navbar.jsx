@@ -24,7 +24,7 @@ const XNavLink = ({ children, ...props }) => {
     <NavLink
       {...props}
       className={({ isActive }) =>
-        `${isActive && 'font-weight-bold'} p-2 text-dark`
+        `${isActive ? 'text-primary' : 'text-dark'} p-2`
       }
     >
       {children}
