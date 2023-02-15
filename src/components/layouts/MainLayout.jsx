@@ -1,10 +1,12 @@
-import Navbar from "components/Navbar";
+import Navbar from 'components/Navbar';
 
-export default function MainLayout({ children }) {
+export default function MainLayout({ children, className, ...props }) {
   return (
     <>
       <Navbar />
-      <div className="container bg-black">{children}</div>
+      <div {...props} className={`container bg-black ${className}`}>
+        {children}
+      </div>
     </>
   );
 }

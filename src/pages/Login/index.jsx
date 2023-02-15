@@ -8,11 +8,13 @@ import config from 'configs/okta';
 
 export default function Login() {
   return (
-    <MainLayout>
-      <Link to="callback" className="btn btn-primary">
-        Login Callback Page
-      </Link>
-      <div className="my-4">
+    <MainLayout className="mt-4">
+      <div className="text-center">
+        <Link to="callback" className="btn btn-primary">
+          Login Callback Page
+        </Link>
+      </div>
+      <div>
         <OktaWidget
           onSuccess={(tokens) => console.log('Success', tokens)}
           onError={(err) => console.error('Error', err)}
