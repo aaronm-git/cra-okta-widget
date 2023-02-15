@@ -3,12 +3,10 @@ import { Link } from 'react-router-dom';
 
 // components
 import OktaWidget from 'components/OktaWidget';
-// config
-import config from 'configs/okta';
 
 export default function Login() {
   return (
-    <MainLayout className="mt-4">
+    <MainLayout className="pt-4">
       <div className="text-center">
         <Link to="callback" className="btn btn-primary">
           Login Callback Page
